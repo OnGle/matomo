@@ -1,8 +1,8 @@
-Piwik - Self Hosted Real-Time Web Analytics
-===========================================
+Matomo - Self Hosted Real-Time Web Analytics
+============================================
 
-`Piwik`_ is the leading free software alternative to Google Analytics,
-used on more than 320,000 websites. Piwik lets you easily collect and
+`Matomo`_ is the leading free software alternative to Google Analytics,
+used on more than 320,000 websites. Matomo lets you easily collect and
 visualize data from websites, apps & the Internet of Things. It can
 generate detailed reports of your website visitors, the search engines
 and keywords they used, the language they speak, your popular pages, and
@@ -11,14 +11,14 @@ much more. Privacy is built-in.
 This appliance includes all the standard features in `TurnKey Core`_,
 and on top of that:
 
-- Piwik configurations:
+- Matomo configurations:
    
-   - Installed from official Piwik debian package archive (to 
-     /usr/share/piwik)
+   - Installed from official Matomo debian package archive (to 
+     /usr/share/matomo)
 
-     **Security note**: Updates to Piwik may require supervision
+     **Security note**: Updates to Matomo may require supervision
      so they **ARE NOT** configured to install automatically. See
-     below for updating Piwiki.
+     below for updating Matomo.
 
 - SSL support out of the box.
 - `Adminer`_ administration frontend for MySQL (listening on port
@@ -27,25 +27,25 @@ and on top of that:
   password recovery).
 - Webmin modules for configuring Apache2, PHP, MySQL and Postfix.
 
-Supervised Manual Piwik Update
-------------------------------
+Supervised Manual Matomo Update
+-------------------------------
 
-To upgrade to the latest version of Piwik from the command line::
+To upgrade to the latest version of Matomo from the command line::
 
     apt-get update
-    apt-get install piwik
+    apt-get install matomo
 
-We recommend subscribing to the `Piwik changelog`_ to be notified 
+We recommend subscribing to the `Matomo changelog`_ to be notified 
 about new versions and security updates. 
 
 Credentials *(passwords set at first boot)*
 -------------------------------------------
 
 -  Webmin, SSH, MySQL, Adminer: username **root**
--  Piwik: username **admin**
+-  Matomo: username **admin**
 
-.. _Piwik: http://piwik.org/
+.. _Matomo: http://matomo.org/
 .. _TurnKey Core: https://www.turnkeylinux.org/core
 .. _Adminer: http://www.adminer.org/
-.. _Piwik changelog: http://piwik.org/changelog/
+.. _Matomo changelog: http://matomo.org/changelog/
 
