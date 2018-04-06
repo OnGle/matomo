@@ -28,8 +28,8 @@ cd $SRC
 wget https://debian.matomo.org/repository.gpg -qO matomo-repository.gpg
 sha256sum -c sha256 || exit 1
 
-cat matomo-repository.gpg | apt-key add -
-rm -f matomo-repository.gpg sha256
+mv matomo-repository.gpg /usr/share/keyrings/matomo.gpg
+rm -f sha256
 cd -
 
 DEBIAN_FRONTEND=noninteractive apt-get update -y
